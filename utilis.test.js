@@ -1,4 +1,4 @@
-const {sum,greeting} = require('./utilis');
+const {sum,greeting,isEven} = require('./utilis');
 
 test('sum - should return 2 + 3 = 5', () => {
     const result = sum (2,3);
@@ -9,3 +9,7 @@ test('greeting - should return Hello mahmoud', () => {
     expect(greeting ('mahmoud')).toMatch('Hello mahmoud');
 
 });
+
+test('isEven -should return true for',() =>{
+    expect (isEven(4)).toBeTruthy();
+})
