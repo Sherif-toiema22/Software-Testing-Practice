@@ -8,9 +8,12 @@ const isEven =(number) => {
     }
     return false;
 };
+
+const Animals = ['cat', 'dog', 'monkey']
 module.exports = {
 
     sum,
     greeting,
-    isEven
+    isEven,
+    Animals
 };

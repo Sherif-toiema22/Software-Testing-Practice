@@ -1,4 +1,4 @@
-const {sum,greeting,isEven} = require('./utilis');
+const {sum,greeting,isEven, Animals} = require('./utilis');
 
 test('sum - should return 2 + 3 = 5', () => {
     const result = sum (2,3);
@@ -10,6 +10,20 @@ test('greeting - should return Hello mahmoud', () => {
 
 });
 
-test('isEven -should return true for',() =>{
+test('isEven -should return true for 4',() =>{
     expect (isEven(4)).toBeTruthy();
-})
+});
+
+
+test('isEven -should return false for 7',() =>{
+    expect (isEven(7)).toBeFalsy();
+});
+
+test('validation',() => {
+    let x;
+    expect(x).not.toBeDefined();
+});
+
+test('animals - should return true for cat', () =>{
+    expect(Animals).toContain('cat');
+});
